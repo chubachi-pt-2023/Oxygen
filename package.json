@@ -1,20 +1,17 @@
 {
+  "private": true,
   "scripts": {
-    "dev": "wrangler dev src/index.ts",
-    "test": "vitest --run",
-    "gen:migrate": "drizzle-kit generate:sqlite --out migrations --schema src/schema.ts",
-    "migrate:local": "wrangler d1 migrations apply user --local",
-    "deploy": "wrangler deploy --minify src/index.ts"
+    "prepare": "nitropack prepare",
+    "dev": "nitropack dev",
+    "build": "nitropack build",
+    "preview": "node .output/server/index.mjs"
   },
   "dependencies": {
-    "hono": "^4.0.1"
+    "nitropack": "latest"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240208.0",
     "better-sqlite3": "^9.4.1",
     "drizzle-kit": "^0.20.14",
-    "drizzle-orm": "^0.29.3",
-    "vitest": "^1.2.2",
-    "wrangler": "^3.25.0"
+    "drizzle-orm": "^0.29.3"
   }
 }
