@@ -1,0 +1,23 @@
+name = "oxygen"
+compatibility_date = "2023-12-01"
+main="./src/index.ts"
+
+[site]
+bucket = "./assets"
+
+# [vars]
+# MY_VARIABLE = "production_value"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "user"
+database_id = "c9517e65-ec9c-4e6c-aedc-bae5cdf01d20"
+preview_database_id = "DB" # Required for Pages local development
