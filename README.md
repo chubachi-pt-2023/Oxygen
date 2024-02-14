@@ -19,10 +19,10 @@ domain: oxygen.jabelic.workers.dev
 - release: release
 
 ```
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 ```
-npm run deploy
+pnpm deploy
 ```
