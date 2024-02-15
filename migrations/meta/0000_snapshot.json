@@ -1,7 +1,7 @@
 {
   "version": "5",
   "dialect": "sqlite",
-  "id": "e6639d5f-f68e-4c4c-a396-fa0667c1991c",
+  "id": "f8cc3c87-6635-48cc-991c-864faeb48f0c",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "users": {
@@ -16,14 +16,14 @@
         },
         "saasId": {
           "name": "saasId",
-          "type": "integer",
+          "type": "text",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
         },
         "userCustomId": {
           "name": "userCustomId",
-          "type": "integer",
+          "type": "text",
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false
